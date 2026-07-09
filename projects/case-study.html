@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project case study by Raphael Tizon — Computer Engineering graduate.">
+  <meta name="author" content="Raphael Tizon">
+  <title>Project Case Study — Raphael Tizon</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-mark">RT</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#hero">Home</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects" class="active">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+        <div class="nav-cta">
+          <a href="#" class="btn btn-primary btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       CASE STUDY HERO
+       ============================================================ -->
+  <section class="case-study-hero" id="caseStudyHero">
+    <div class="container">
+      <div class="case-study-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>›</span>
+        <a href="../index.html#projects">Projects</a>
+        <span>›</span>
+        <span id="breadcrumbTitle">Project Title</span>
+      </div>
+
+      <h1 id="projectTitle">Project Title</h1>
+
+      <div class="case-study-tags" id="projectTags">
+        <!-- Tags injected by JS -->
+      </div>
+
+      <div class="case-study-image-hero">
+        <img id="projectHeroImage" src="" alt="Project screenshot" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CASE STUDY CONTENT
+       ============================================================ -->
+  <section class="case-study-content">
+    <div class="container">
+      <div class="case-study-grid">
+
+        <div class="case-study-main" id="projectMain">
+          <!-- Content injected by JS based on project -->
+        </div>
+
+        <aside class="case-study-sidebar">
+          <div class="case-study-sidebar-card">
+            <h3>Tech Stack</h3>
+            <div class="skill-pills" id="projectTechStack" style="gap: 6px;">
+              <!-- Tech stack pills injected by JS -->
+            </div>
+          </div>
+
+          <div class="case-study-sidebar-card">
+            <h3>Project Details</h3>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div class="about-detail-item">
+                <span class="detail-label">Category</span>
+                <span class="detail-value" id="projectCategory">—</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="detail-label">Duration</span>
+                <span class="detail-value" id="projectDuration">—</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="detail-label">Role</span>
+                <span class="detail-value" id="projectRole">—</span>
+              </div>
+              <div class="about-detail-item">
+                <span class="detail-label">Team Size</span>
+                <span class="detail-value" id="projectTeam">—</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-study-buttons">
+            <a href="#" class="btn btn-primary btn-sm" id="projectGithub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="btn btn-outline btn-sm" id="projectDemo">
+              Live Demo
+            </a>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Metrics -->
+      <div class="case-study-metrics" id="projectMetrics">
+        <!-- Metrics injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-left">
+        <p>© 2026 <a href="../index.html">Raphael Tizon</a>. Engineered with passion.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-link" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" class="footer-social-link" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ============================================================
+       CASE STUDY — Dynamic content loader
+       ============================================================ */
+
+    // Project data store
+    const projectData = {
+      iot: {
+        title: 'IoT Smart Home System',
+        image: '../assets/project-iot.png',
+        tags: ['Embedded', 'IoT', 'Full-Stack'],
+        category: 'Embedded / IoT',
+        duration: '4 months',
+        role: 'Lead Developer',
+        team: '3 members',
+        tech: ['Arduino', 'ESP32', 'MQTT', 'React', 'Node.js', 'MongoDB', 'Socket.io', 'Docker'],
+        metrics: [
+          { value: '12', label: 'Connected Devices' },
+          { value: '<2s', label: 'Response Time' },
+          { value: '30%', label: 'Energy Savings' },
+          { value: '99.5%', label: 'Uptime' },
+        ],
+        content: `
+          <h2>Overview</h2>
+          <p>A comprehensive home automation platform that integrates multiple IoT sensors and actuators into a unified dashboard. The system enables real-time monitoring of environmental conditions, energy consumption tracking, and remote device control through a responsive web interface.</p>
+
+          <h2>Problem Statement</h2>
+          <p>Existing smart home solutions are often expensive, proprietary, and lack interoperability between different manufacturers' devices. There was a need for an affordable, open-source solution that could integrate various sensors and provide meaningful analytics to homeowners.</p>
+
+          <h2>Technical Approach</h2>
+          <p>The system architecture follows a three-tier model: edge devices (Arduino/ESP32 microcontrollers with sensors), a middleware layer (Node.js MQTT broker for message routing), and a presentation layer (React dashboard with real-time Socket.io updates).</p>
+          <p>Sensor data is collected every 5 seconds, processed through a moving average filter to reduce noise, and stored in MongoDB for historical analysis. The dashboard provides real-time gauges, trend charts, and configurable alerts when readings exceed user-defined thresholds.</p>
+
+          <h2>My Role</h2>
+          <p>As lead developer, I designed the system architecture, programmed the microcontrollers for sensor data acquisition, built the MQTT communication layer, and developed the frontend dashboard. I also implemented the energy analytics module that calculates usage patterns and provides optimization recommendations.</p>
+
+          <h2>Key Challenges</h2>
+          <p>The main challenges included ensuring reliable wireless communication between edge devices and the server (solved with MQTT QoS levels and automatic reconnection), handling concurrent real-time data streams without overwhelming the browser (solved with data throttling and efficient React state management), and designing a PCB for the main sensor hub.</p>
+        `,
+      },
+
+      security: {
+        title: 'AI-Powered Intrusion Detection System',
+        image: '../assets/project-security.png',
+        tags: ['Cybersecurity', 'AI / ML', 'Python'],
+        category: 'Cybersecurity / AI',
+        duration: '3 months',
+        role: 'ML Engineer & Backend Dev',
+        team: '2 members',
+        tech: ['Python', 'Scikit-learn', 'TensorFlow', 'Wireshark', 'Flask', 'Pandas', 'NumPy', 'Docker'],
+        metrics: [
+          { value: '97.3%', label: 'Detection Accuracy' },
+          { value: '<50ms', label: 'Classification Speed' },
+          { value: '0.8%', label: 'False Positive Rate' },
+          { value: '15K+', label: 'Packets Analyzed/sec' },
+        ],
+        content: `
+          <h2>Overview</h2>
+          <p>A machine learning-based network intrusion detection system (NIDS) that monitors network traffic in real-time to identify and classify malicious activities. The system uses ensemble methods combining Random Forest, Gradient Boosting, and a neural network to achieve high accuracy with low false positive rates.</p>
+
+          <h2>Problem Statement</h2>
+          <p>Traditional signature-based intrusion detection systems fail to detect zero-day attacks and novel threat patterns. There was a need for an intelligent system that could learn from traffic patterns and adapt to emerging threats without manual rule updates.</p>
+
+          <h2>Technical Approach</h2>
+          <p>We trained our models on the NSL-KDD dataset and supplemented it with custom-captured traffic from a lab network. Feature engineering involved extracting 41 network flow features including packet size distributions, connection duration, protocol flags, and byte ratios.</p>
+          <p>The final ensemble model combines three classifiers with a voting mechanism. The Flask-based dashboard provides real-time traffic visualization, threat alerts with severity classification, and geographic mapping of suspicious source IPs using the GeoIP database.</p>
+
+          <h2>My Role</h2>
+          <p>I was responsible for the machine learning pipeline — data preprocessing, feature engineering, model training and hyperparameter tuning, and integration with the real-time packet capture engine. I also built the Flask REST API that serves predictions to the frontend dashboard.</p>
+
+          <h2>Key Challenges</h2>
+          <p>Balancing detection accuracy with processing speed was the primary challenge. We optimized the feature extraction pipeline using vectorized NumPy operations and implemented a two-stage classification approach: a fast lightweight model for initial screening, followed by the full ensemble for flagged packets only.</p>
+        `,
+      },
+
+      webapp: {
+        title: 'TaskFlow — Project Management Platform',
+        image: '../assets/project-webapp.png',
+        tags: ['Web Development', 'Full-Stack', 'React'],
+        category: 'Web Development',
+        duration: '2 months',
+        role: 'Full-Stack Developer',
+        team: '1 (Solo project)',
+        tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Socket.io', 'JWT', 'Docker', 'Redis'],
+        metrics: [
+          { value: '500+', label: 'Tasks Managed' },
+          { value: '<100ms', label: 'API Response' },
+          { value: '98%', label: 'Lighthouse Score' },
+          { value: 'Real-time', label: 'Collaboration' },
+        ],
+        content: `
+          <h2>Overview</h2>
+          <p>A full-featured project management platform with Kanban boards, real-time multi-user collaboration, role-based access control, and automated workflow tracking. Built as a solo project to demonstrate proficiency in modern full-stack development.</p>
+
+          <h2>Problem Statement</h2>
+          <p>Many project management tools are either too complex for small teams or lack real-time collaboration features. TaskFlow aims to be a lightweight yet powerful alternative that provides the essential features teams need without the bloat.</p>
+
+          <h2>Technical Approach</h2>
+          <p>The frontend is built with React using a component-based architecture with custom hooks for state management. The backend is a RESTful API built with Express.js, featuring JWT authentication, role-based middleware, and PostgreSQL for persistent storage.</p>
+          <p>Real-time collaboration is powered by Socket.io, enabling instant updates across all connected clients when tasks are created, moved, or modified. Redis is used for session management and caching frequently accessed data.</p>
+
+          <h2>My Role</h2>
+          <p>As the sole developer, I handled the entire stack — database schema design, API development, frontend component architecture, real-time sync implementation, authentication system, and deployment pipeline with Docker Compose.</p>
+
+          <h2>Key Challenges</h2>
+          <p>Implementing conflict-free real-time drag-and-drop across multiple users required careful state synchronization. I solved this using operational transforms for concurrent edits and optimistic UI updates with server reconciliation.</p>
+        `,
+      },
+
+      robotics: {
+        title: 'Autonomous Robot Navigation System',
+        image: '../assets/project-robotics.png',
+        tags: ['Robotics', 'Computer Vision', 'Embedded'],
+        category: 'Robotics / Computer Vision',
+        duration: '6 months (Capstone)',
+        role: 'Systems Architect & CV Lead',
+        team: '4 members',
+        tech: ['ROS', 'Python', 'C++', 'OpenCV', 'Raspberry Pi', 'LIDAR', 'TensorFlow Lite', 'SLAM'],
+        metrics: [
+          { value: '95%', label: 'Nav Accuracy' },
+          { value: '<200ms', label: 'Decision Latency' },
+          { value: '30min', label: 'Battery Life' },
+          { value: '2m/s', label: 'Max Speed' },
+        ],
+        content: `
+          <h2>Overview</h2>
+          <p>Our capstone project: an autonomous mobile robot capable of navigating indoor environments using SLAM (Simultaneous Localization and Mapping), LIDAR-based obstacle detection, and computer vision for object recognition. The robot can autonomously map unknown environments and navigate to specified waypoints while avoiding obstacles.</p>
+
+          <h2>Problem Statement</h2>
+          <p>Indoor autonomous navigation remains a challenging problem due to dynamic obstacles, varying lighting conditions, and the need for real-time decision making on resource-constrained hardware. Our goal was to create a cost-effective solution using commodity hardware.</p>
+
+          <h2>Technical Approach</h2>
+          <p>The system runs on ROS (Robot Operating System) with a Raspberry Pi 4 as the main compute unit. A 2D LIDAR provides 360-degree obstacle detection, while a camera module handles visual odometry and object recognition using a TensorFlow Lite model.</p>
+          <p>We implemented the GMapping SLAM algorithm for real-time map building, A* path planning for global navigation, and a Dynamic Window Approach (DWA) for local obstacle avoidance. Sensor fusion combines LIDAR and camera data using an Extended Kalman Filter.</p>
+
+          <h2>My Role</h2>
+          <p>I served as the systems architect and computer vision lead. I designed the overall software architecture, implemented the camera-based perception pipeline (object detection + visual odometry), integrated the sensor fusion module, and optimized the TensorFlow Lite model for real-time inference on the Raspberry Pi.</p>
+
+          <h2>Key Challenges</h2>
+          <p>Running computationally intensive SLAM and neural network inference simultaneously on a Raspberry Pi required significant optimization. We used multi-threading, model quantization (INT8), and prioritized processing to ensure the control loop maintained a consistent 10Hz update rate.</p>
+        `,
+      },
+
+      fpga: {
+        title: 'FPGA Digital Signal Processor',
+        image: '../assets/project-fpga.png',
+        tags: ['Embedded', 'Hardware', 'DSP'],
+        category: 'Embedded / Hardware',
+        duration: '3 months',
+        role: 'Hardware Designer',
+        team: '2 members',
+        tech: ['VHDL', 'Xilinx Vivado', 'MATLAB', 'FPGA (Artix-7)', 'Python', 'Oscilloscope'],
+        metrics: [
+          { value: '100MHz', label: 'Clock Speed' },
+          { value: '16-bit', label: 'Resolution' },
+          { value: '<1μs', label: 'Processing Latency' },
+          { value: '4', label: 'Filter Stages' },
+        ],
+        content: `
+          <h2>Overview</h2>
+          <p>A custom digital signal processing pipeline implemented on a Xilinx Artix-7 FPGA, featuring configurable FIR and IIR filters, real-time FFT analysis, and a waveform visualization interface. The system processes analog signals at up to 100MHz with 16-bit resolution.</p>
+
+          <h2>Problem Statement</h2>
+          <p>Software-based DSP solutions introduce latency that is unacceptable for real-time signal processing applications. An FPGA-based solution provides deterministic, sub-microsecond processing while allowing reconfigurable filter parameters — combining the benefits of dedicated hardware with software flexibility.</p>
+
+          <h2>Technical Approach</h2>
+          <p>The DSP pipeline is implemented in VHDL with a modular architecture: ADC interface → decimation filter → configurable FIR/IIR filter bank → FFT engine → DAC output. Filter coefficients are computed in MATLAB and loaded into the FPGA via a UART configuration interface.</p>
+          <p>The FFT module implements a radix-2 butterfly algorithm with 1024 points, providing frequency domain analysis with approximately 100Hz resolution at the default sampling rate. A Python-based GUI connects via UART to display real-time waveforms and frequency spectra.</p>
+
+          <h2>My Role</h2>
+          <p>I designed and implemented the VHDL modules for the FIR filter, IIR filter, and FFT engine. I also wrote the MATLAB scripts for filter design and coefficient generation, and performed hardware verification using testbenches and oscilloscope measurements.</p>
+
+          <h2>Key Challenges</h2>
+          <p>Meeting timing constraints at 100MHz required careful pipeline design and resource sharing. The FFT module's butterfly operations needed to be parallelized while managing block RAM bandwidth. I solved this by implementing a dual-port RAM architecture with ping-pong buffers for continuous data flow.</p>
+        `,
+      },
+    };
+
+    // Load project based on URL parameter
+    function loadProject() {
+      const params = new URLSearchParams(window.location.search);
+      const projectKey = params.get('project') || 'iot';
+      const project = projectData[projectKey];
+
+      if (!project) {
+        window.location.href = '../index.html#projects';
+        return;
+      }
+
+      // Update page title
+      document.title = `${project.title} — Raphael Tizon`;
+
+      // Breadcrumb
+      document.getElementById('breadcrumbTitle').textContent = project.title;
+
+      // Hero
+      document.getElementById('projectTitle').textContent = project.title;
+      document.getElementById('projectHeroImage').src = project.image;
+      document.getElementById('projectHeroImage').alt = project.title;
+
+      // Tags
+      const tagsContainer = document.getElementById('projectTags');
+      tagsContainer.innerHTML = project.tags
+        .map(tag => `<span class="case-study-tag">${tag}</span>`)
+        .join('');
+
+      // Sidebar details
+      document.getElementById('projectCategory').textContent = project.category;
+      document.getElementById('projectDuration').textContent = project.duration;
+      document.getElementById('projectRole').textContent = project.role;
+      document.getElementById('projectTeam').textContent = project.team;
+
+      // Tech stack
+      const techContainer = document.getElementById('projectTechStack');
+      techContainer.innerHTML = project.tech
+        .map(t => `<span class="skill-pill" style="font-size:0.8rem; padding:0.35rem 0.75rem; color:var(--gray-700); border-color:var(--gray-200); background:var(--gray-100);">${t}</span>`)
+        .join('');
+
+      // Main content
+      document.getElementById('projectMain').innerHTML = project.content;
+
+      // Metrics
+      const metricsContainer = document.getElementById('projectMetrics');
+      metricsContainer.innerHTML = project.metrics
+        .map(m => `
+          <div class="metric-card">
+            <div class="metric-value">${m.value}</div>
+            <div class="metric-label">${m.label}</div>
+          </div>
+        `)
+        .join('');
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      loadProject();
+
+      // Mobile nav
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+      const overlay = document.getElementById('navOverlay');
+
+      if (toggle && links) {
+        toggle.addEventListener('click', () => {
+          const isOpen = links.classList.contains('open');
+          toggle.classList.toggle('active');
+          links.classList.toggle('open');
+          if (overlay) overlay.classList.toggle('open');
+          document.body.style.overflow = isOpen ? '' : 'hidden';
+        });
+
+        if (overlay) {
+          overlay.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            links.classList.remove('open');
+            overlay.classList.remove('open');
+            document.body.style.overflow = '';
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
