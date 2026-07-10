@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initSmoothScroll();
   initActiveNavHighlight();
+  initCertModal();
 });
 
 /* ============================================================
@@ -342,4 +343,52 @@ function initActiveNavHighlight() {
   );
 
   sections.forEach(section => observer.observe(section));
+}
+
+/* ============================================================
+   9. CERTIFICATION MODAL
+   ============================================================ */
+function initCertModal() {
+  const modal = document.getElementById('certModal');
+  const modalBody = document.getElementById('certModalBody');
+  const closeBtn = document.querySelector('.cert-modal-close');
+  const triggers = document.querySelectorAll('.cert-modal-trigger');
+
+  if (!modal || !modalBody || !closeBtn) return;
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = trigger.getAttribute('href');
+      
+      if (href.endsWith('.pdf')) {
+        modalBody.innerHTML = `<iframe src="${href}#toolbar=0" title="Certificate"></iframe>`;
+      } else {
+        modalBody.innerHTML = `<img src="${href}" alt="Certificate">`;
+      }
+      
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  const closeModal = () => {
+    modal.classList.remove('active');
+    setTimeout(() => { modalBody.innerHTML = ''; }, 500);
+    document.body.style.overflow = '';
+  };
+
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }
