@@ -202,7 +202,7 @@ function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = document.getElementById('contactName').value.trim();
@@ -221,26 +221,44 @@ function initContactForm() {
       return;
     }
 
-    // Simulate form submission
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalContent = submitBtn.innerHTML;
-    submitBtn.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-      Message Sent!
-    `;
+    submitBtn.innerHTML = 'Sending...';
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    showFormFeedback(form, 'Thank you! Your message has been sent successfully.', 'success');
+    const formData = new FormData(form);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      form.reset();
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+      const data = await response.json();
+
+      if (response.status === 200) {
+        submitBtn.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          Message Sent!
+        `;
+        showFormFeedback(form, 'Thank you! Your message has been sent successfully.', 'success');
+        
+        setTimeout(() => {
+          form.reset();
+          submitBtn.innerHTML = originalContent;
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          removeFeedback(form);
+        }, 3000);
+      } else {
+        throw new Error(data.message || 'Something went wrong.');
+      }
+    } catch (error) {
       submitBtn.innerHTML = originalContent;
       submitBtn.disabled = false;
       submitBtn.style.opacity = '1';
-      removeFeedback(form);
-    }, 3000);
+      showFormFeedback(form, error.message || 'Something went wrong. Please try again.', 'error');
+    }
   });
 }
 

@@ -561,19 +561,21 @@
 
         <!-- Contact Form -->
         <form class="contact-form reveal" id="contactForm">
+          <input type="hidden" name="access_key" value="af0d5617-f3fe-4fa4-87cd-84c3cc7448d0">
+          <input type="checkbox" name="botcheck" style="display: none;">
           <div class="form-row">
             <div class="form-group">
-              <input type="text" id="contactName" placeholder="Your Name" required>
+              <input type="text" id="contactName" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-              <input type="email" id="contactEmail" placeholder="Your Email" required>
+              <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" id="contactSubject" placeholder="Subject">
+            <input type="text" id="contactSubject" name="subject" placeholder="Subject">
           </div>
           <div class="form-group">
-            <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+            <textarea id="contactMessage" name="message" placeholder="Your Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
