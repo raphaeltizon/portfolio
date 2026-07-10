@@ -1740,3 +1740,109 @@ p {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   17. RESUME PAGE
+   ============================================================ */
+.resume-page-body {
+  background-color: var(--navy-900);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-viewer-container {
+  flex: 1;
+  margin-top: var(--nav-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navy-900);
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-iframe-wrapper {
+  width: 100%;
+  height: calc(100vh - var(--nav-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  border: none;
+  background-color: var(--navy-800);
+  box-shadow: var(--shadow-xl);
+}
+
+.resume-mobile-card-wrapper {
+  display: none;
+  padding: var(--space-xl);
+  width: 100%;
+}
+
+.resume-mobile-card {
+  background: var(--navy-800);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.resume-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--blue-400);
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+.resume-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.resume-mobile-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--white);
+}
+
+.resume-mobile-card p {
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-xl);
+  line-height: 1.6;
+}
+
+.mobile-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mobile-card-actions .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .resume-iframe-wrapper {
+    display: none;
+  }
+  .resume-mobile-card-wrapper {
+    display: flex;
+  }
+}

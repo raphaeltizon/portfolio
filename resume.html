@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View Raphael Tizon's resume. Computer Engineering graduate from Polytechnic University of the Philippines.">
+  <meta name="author" content="Raphael Tizon">
+  <title>Resume — Raphael Tizon</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="resume-page-body">
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">RT</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#achievements">Achievements</a>
+        <a href="index.html#contact">Contact</a>
+        <div class="nav-cta">
+          <a href="assets/CV-Raphael%20Tizon.pdf" download="CV-Raphael Tizon.pdf" class="btn btn-primary btn-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       RESUME VIEWER
+       ============================================================ -->
+  <main class="resume-viewer-container">
+    <div class="resume-iframe-wrapper">
+      <iframe src="assets/CV-Raphael%20Tizon.pdf" class="resume-iframe" title="Raphael Tizon Resume"></iframe>
+    </div>
+
+    <!-- Mobile fallback card -->
+    <div class="resume-mobile-card-wrapper">
+      <div class="resume-mobile-card">
+        <div class="resume-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <h2>Raphael Tizon — Resume</h2>
+        <p>PDF previews are optimized for desktop screens. Click below to download and view the resume directly on your mobile device.</p>
+        <div class="mobile-card-actions">
+          <a href="assets/CV-Raphael%20Tizon.pdf" download="CV-Raphael Tizon.pdf" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="index.html" class="btn btn-secondary">
+            Return to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
