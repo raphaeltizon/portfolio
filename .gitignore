@@ -12,3 +12,6 @@ desktop.ini
 
 # Logs
 *.log
+
+# Temporary cloned repositories
+temp-projects/
