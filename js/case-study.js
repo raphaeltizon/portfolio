@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Tech Stack Pills
   const techStackContainer = document.getElementById('projectTechStack');
   if (techStackContainer) {
-    techStackContainer.innerHTML = project.techStack.map(tech => `<span class="skill-pill">${tech}</span>`).join('');
+    techStackContainer.innerHTML = project.techStack.map(tech => `<span class="project-tag">${tech}</span>`).join('');
   }
   
   // Links
