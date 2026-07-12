@@ -823,8 +823,9 @@ p {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
   gap: var(--space-xl);
+  justify-content: center;
 }
 
 .project-card {
@@ -1174,8 +1175,9 @@ p {
 
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
   gap: var(--space-xl);
+  justify-content: center;
 }
 
 .achievement-card {
@@ -1512,7 +1514,8 @@ p {
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: center;
   }
 }
 
