@@ -721,10 +721,10 @@ p {
   border: 2px solid var(--gray-200);
 }
 
-.about-image .about-placeholder {
-  font-size: 4rem;
-  color: var(--gray-500);
-  opacity: 0.3;
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-image-accent {
@@ -1151,8 +1151,7 @@ p {
 
 #certModalBody iframe {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1.414 / 1;
+  height: 80vh;
   border: none;
   border-radius: var(--radius-md, 8px);
 }
@@ -1945,4 +1944,9 @@ p {
   .resume-mobile-card-wrapper {
     display: flex;
   }
+}
+
+/* Utilities */
+.mt-4 {
+  margin-top: var(--space-lg); /* 1.5rem / 24px */
 }

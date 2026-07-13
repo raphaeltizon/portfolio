@@ -9,6 +9,7 @@ const projectsData = {
     teamSize: '3 Members',
     githubLink: 'https://github.com/kimbewi/ChickMate',
     demoLink: 'https://chickmate-web.vercel.app/',
+    pdfLink: '../assets/manuscript.pdf',
     techStack: ['Flutter', 'Vue.js', 'Python', 'Firebase', 'scikit-fuzzy', 'WebRTC'],
     mainContent: `
       <h2>Project Overview</h2>
@@ -34,7 +35,7 @@ const projectsData = {
   },
   quaketrace: {
     title: 'QuakeTrace — IoT Hazard Assessment',
-    heroImage: '../assets/project-quaketrace.png',
+    heroImage: '../assets/project-quaketrace.jpg',
     tags: ['IoT', 'Embedded Systems', 'Hardware'],
     category: 'Competition Entry',
     duration: '2026',
@@ -189,6 +190,16 @@ document.addEventListener('DOMContentLoaded', () => {
       demoBtn.style.display = 'inline-flex';
     } else {
       demoBtn.style.display = 'none';
+    }
+  }
+  
+  const pdfBtn = document.getElementById('projectPdf');
+  if (pdfBtn) {
+    if (project.pdfLink) {
+      pdfBtn.href = project.pdfLink;
+      pdfBtn.style.display = 'inline-flex';
+    } else {
+      pdfBtn.style.display = 'none';
     }
   }
   
