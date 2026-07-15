@@ -939,6 +939,31 @@ p {
   font-weight: 500;
 }
 
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.caption-text {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  font-family: var(--font-body);
+  margin-top: 4px;
+}
+
+.caption-text.mt-2 {
+  margin-top: var(--space-sm);
+}
+
+
 /* ============================================================
    10. SKILLS SECTION
    ============================================================ */

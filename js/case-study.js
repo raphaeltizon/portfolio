@@ -9,6 +9,7 @@ const projectsData = {
     teamSize: '3 Members',
     githubLink: 'https://github.com/kimbewi/ChickMate',
     demoLink: 'https://chickmate-web.vercel.app/',
+    hardwareOffline: true,
     pdfLink: '../assets/manuscript.pdf',
     techStack: ['Flutter', 'Vue.js', 'Python', 'Firebase', 'scikit-fuzzy', 'WebRTC'],
     mainContent: `
@@ -42,7 +43,8 @@ const projectsData = {
     role: 'Hardware & Firmware Lead',
     teamSize: '3 Members',
     githubLink: 'https://github.com/ellameaea/iot-dashboard',
-    demoLink: '', // No demo link
+    demoLink: 'https://iot-dashboard-jqlf.vercel.app/',
+    hardwareOffline: true,
     techStack: ['ESP32', 'C++', 'MQTT', 'Nuxt.js', 'Supabase', 'Chart.js'],
     mainContent: `
       <h2>The Challenge</h2>
@@ -183,13 +185,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   const demoBtn = document.getElementById('projectDemo');
+  const warningEl = document.getElementById('projectDemoWarning');
   if (demoBtn) {
     if (project.demoLink) {
       demoBtn.href = project.demoLink;
       demoBtn.target = '_blank';
       demoBtn.style.display = 'inline-flex';
+      if (warningEl) {
+        if (project.hardwareOffline) {
+          warningEl.style.display = 'block';
+        } else {
+          warningEl.style.display = 'none';
+        }
+      }
     } else {
       demoBtn.style.display = 'none';
+      if (warningEl) warningEl.style.display = 'none';
     }
   }
   
