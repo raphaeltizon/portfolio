@@ -98,6 +98,45 @@ const projectsData = {
         <div class="metric-label">API Syncing</div>
       </div>
     `
+  },
+  'itdr-email-sender': {
+    title: 'ITDR & Departmental Follow-Up Email Sender',
+    heroImage: '../assets/project-itdr-email.png',
+    tags: ['Python', 'Tkinter GUI', 'Automation', 'SMTP'],
+    category: 'Automation / Desktop Tool',
+    duration: '2025',
+    role: 'Sole Developer',
+    teamSize: '1 Member',
+    githubLink: 'https://github.com/raphaeltizon/itdr-email-sender',
+    techStack: ['Python 3', 'Tkinter', 'SMTP / smtplib', 'python-dotenv', 'PyInstaller', 'CSV'],
+    mainContent: `
+      <h2>Project Overview</h2>
+      <p>The ITDR & Departmental Follow-Up Email Sender is a standalone desktop GUI application developed in Python with Tkinter. Built to streamline recurring administrative and operational communications, the tool automates email outreach for IT Resiliency (ITDR), Business Continuity Management, compliance verification, and inter-departmental follow-ups.</p>
+      
+      <h2>Key Features & Functionality</h2>
+      <p>Designed for efficiency, security, and ease of use, the application provides a complete workflow for managing recipient lists and dispatching tailored emails:</p>
+      <ul>
+        <li><strong>🔒 Secure SMTP Authentication:</strong> Authenticates securely via SMTP with out-of-the-box support for Gmail (using 16-character Google App Passwords) as well as custom SMTP hosts and ports.</li>
+        <li><strong>⚡ .env Credential Storage:</strong> Optionally stores default sender email addresses and app credentials in a local <code>.env</code> file for quick 1-click login on startup.</li>
+        <li><strong>📁 Recipient List CSV Import:</strong> Reads recipient lists directly from standard <code>.csv</code> files, mapping fields such as <em>Name</em>, <em>Email Address</em>, and <em>Department</em>.</li>
+        <li><strong>✉️ Dynamic String Templating:</strong> Supports pre-configured email templates with dynamic tokens such as <code>{name}</code> and <code>{department}</code> that personalize messages automatically for each recipient.</li>
+        <li><strong>👁️ Live Message Preview:</strong> Renders real-time previews of formatted subject lines and email body text before triggering any dispatches to prevent formatting mistakes.</li>
+        <li><strong>🎯 Granular Recipient Selection:</strong> Features an interactive selection box supporting multi-select (Ctrl/Shift-click), "Select All", and targeted recipient filtering.</li>
+      </ul>
+
+      <h2>Distribution & Executable Packaging</h2>
+      <p>To enable non-technical team members to run the tool without needing a Python runtime environment installed, the project is configured for standalone executable packaging using <strong>PyInstaller</strong>, generating a self-contained Windows <code>.exe</code> file.</p>
+    `,
+    metrics: `
+      <div class="metric-card">
+        <div class="metric-value">100%</div>
+        <div class="metric-label">Automated Batch Personalization</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">Standalone</div>
+        <div class="metric-label">Windows .exe Build</div>
+      </div>
+    `
   }
 };
 
