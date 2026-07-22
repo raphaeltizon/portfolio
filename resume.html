@@ -41,7 +41,7 @@
         <a href="index.html#achievements">Achievements</a>
         <a href="index.html#contact">Contact</a>
         <div class="nav-cta">
-          <a href="/assets/CV-Raphael-Tizon.pdf" download="CV-Raphael-Tizon.pdf" class="btn btn-primary btn-sm">
+          <a href="assets/CV-Raphael-Tizon.pdf" target="_blank" download="CV-Raphael-Tizon.pdf" class="btn btn-primary btn-sm">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -66,10 +66,7 @@
        ============================================================ -->
   <main class="resume-viewer-container">
     <div class="resume-iframe-wrapper">
-      <object data="/assets/CV-Raphael-Tizon.pdf#toolbar=0" type="application/pdf" class="resume-iframe" title="Raphael Tizon Resume">
-        <embed src="/assets/CV-Raphael-Tizon.pdf#toolbar=0" type="application/pdf" class="resume-iframe" />
-        <p>Your browser does not support inline PDF viewing. <a href="/assets/CV-Raphael-Tizon.pdf">Click here to download the PDF.</a></p>
-      </object>
+      <iframe src="assets/CV-Raphael-Tizon.pdf#toolbar=0" class="resume-iframe" title="Raphael Tizon Resume"></iframe>
     </div>
 
     <!-- Mobile fallback card -->
@@ -86,19 +83,27 @@
           </svg>
         </div>
         <h2>Raphael Tizon — Resume</h2>
-        <p>PDF previews are optimized for desktop screens. Click below to download and view the resume directly on your
-          mobile device.</p>
+        <p>PDF previews are optimized for desktop screens. Click below to view or download the resume directly on your device.</p>
         <div class="mobile-card-actions">
-          <a href="/assets/CV-Raphael-Tizon.pdf" download="CV-Raphael-Tizon.pdf" class="btn btn-primary">
+          <a href="assets/CV-Raphael-Tizon.pdf" target="_blank" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Open PDF in New Tab
+          </a>
+          <a href="assets/CV-Raphael-Tizon.pdf" download="CV-Raphael-Tizon.pdf" class="btn btn-secondary">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Download Resume
+            Download PDF
           </a>
-          <a href="index.html" class="btn btn-secondary">
+          <a href="index.html" class="btn btn-tertiary" style="margin-top: 8px; color: var(--gray-400);">
             Return to Home
           </a>
         </div>
